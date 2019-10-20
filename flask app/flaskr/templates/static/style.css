@@ -1,0 +1,272 @@
+:root {
+  --contrast: 100%;
+  --brightness: 100%;
+  --hue-rotate: 0deg;
+  --sepia: 0%;
+  --accent: #4A90E2;
+  --dark-accent: #3F7AC0;
+  --gray: #E6E7F0;
+  --dark-gray: #4E5056;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(0deg, #EBFCFF 0%, #FFFFFF 89%);
+  font-family: Roboto, sans-serif;
+}
+
+// Drop area
+
+.drop-it-hot {
+  background-color: white;
+  border-radius: 15px;
+  width: 700px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 15px 0 rgba(black, .1);
+  overflow: hidden;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: 2px dashed var(--gray);
+    border-radius: 5px;
+    z-index: 0;
+  }
+  
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    color: var(--accent);
+    background-color: white;
+    border: 3px solid var(--gray);
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.circle {
+  transition: transform 150ms ease-in;
+  z-index: 10;
+
+  svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  &:before {
+    content: '';
+    background-color: var(--accent);
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    transition: transform 250ms ease-in, opacity 200ms ease-in;
+    z-index: 0;
+  }
+  
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  &:hover {
+    transform: scale(1.2);
+    opacity: .9;
+
+    &:before {
+      transform: scale(8);
+      opacity: 1;
+    }
+    
+    &:after {
+      border: 3px solid white;
+    }
+    svg {
+      color: white;
+      z-index: 1;
+    }
+  }
+}
+
+.highlight { 
+
+  &:before {
+    transform: scale(8);
+    opacity: 1;
+  }
+  
+  &:after {
+    border: 3px solid white;
+  }
+
+  svg {
+    color: white;
+    z-index: 1;
+  }
+}
+
+// Choose file button
+
+.choose-files {
+  align-self: flex-end;
+  z-index: 10;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    .btn {  
+      background-color: var(--dark-accent);
+    }
+  }
+}
+
+.label {
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+  font-size: 18px;
+}
+
+.button-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: var(--accent);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+}
+
+// Gallery
+
+#gallery {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: contrast(var(--contrast)) brightness(var(--brightness)) sepia(var(--sepia)) hue-rotate(var(--hue-rotate));
+  }
+}
+
+// Range sliders
+
+.editor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 700px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: -10px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.is-visible {
+  transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.range-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.range {
+  -webkit-appearance: none;
+  height: 2px;
+  border-radius: 5px;
+  background: var(--gray);
+  outline: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+// Firefox Overrides
+::-moz-range-track {
+    background: var(--gray);
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer { 
+  border: 0; 
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 8px;
+  background-color: var(--accent);
+  cursor: pointer;
+}

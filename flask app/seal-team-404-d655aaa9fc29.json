@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "seal-team-404",
+  "private_key_id": "d655aaa9fc29f4c149e5c99a76395ab90e33e123",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDoV0ATNa9rI+r8\nmJGpN44fGSS8uJxPcrGqrbiHl3AefYXbKqjEZWn4j9QjMUnSYds6yQl5IrVDQK7I\nI2jbE8pX3+V/sRauWzv/juBd5krIi554w4vn1Hzi10OekaSptTvNl3Y8+2yhA/uq\njKKlx/CTAfCyEFnKu9vj579Yws1QH3x6fHI/TlpZEJNhBKgROR5usIpaqXJOV/ov\ndNNuPoiIodRebGu1D2azC1iKyT4vpxP0cgX9ZuLUa608aA2kuho4P2Pq/RPi1tFW\n3FYcCoAQXDFbG91Kgqip6G+l/calLjKr89qIo6HXueFyTT61jigDvMdBFwQEKNwE\niQxW4VLFAgMBAAECggEAOAPLDKaRiXbiIS6GVaHxd4FoGEC43LWl7GSQG86QpyUz\nl5yQDjN2Cklgx3BLYDeb828DA+uwgEuQp+tTjRfXHXr7GV9APN59l1YitTi/mFyC\n4xIgAY864bSs1oa+CHVLevxUcwzZynMLonlgADB1SXf7B+8FuukyMR7PBM8IUVOk\nWu2CBHzdOpGadRa6xcviUoP4othcAqDui4V1iuVaG6vsY/nnK9Hn/6g1hTxnVnIr\nvRNQ4cnDqi0vz0XYPIK4yYxq4xsvPm/6oWf68vkSxJ/fYzXuavy8/HSKubrWFWN5\n8BeAMCpZmHUN6qKFTa8nWSTtO1tVryjc5Vts0zcbqQKBgQD6l+43hY7rdeXRec3q\ncwg2r5UQZqjRwJo47E39rDHi1gd2hnvTp0ssX95HoBMDIaNFKPw5rgZf9M/IdRRb\nDBqdb6kiCTJ0C3ja++M6MxRaDyYFbMya14PY77U5juvAaNtSrhQI0DAlI3lmSdtk\nEzRZezJTCNyDJTrUFRO4BDYTLQKBgQDtWoHeMce7uk21mTaKWGzw3KbG68SJBzXr\nm5NXMTX7tgujxSYFys8yFs2RJpB0Mcsc8Dr22fwu9n0trWekem5EqJWJkpf3Yl3m\nhP3sZtIHmRPKSVpmjaEeP6AVZtRDqbVX0pdF5nka5vZrIYDKG8y5lUJcI3KyP1IH\n0YLlVcbc+QKBgQDg2jSo4xFjm41UUbv/k6oaD6BscAEo/G4lh3tPlBPLGwrlQjSX\nrLPaJEd581s74xHyO51eUBVuQmey0cMrEwhKneegH6qCz8xoib3Q+gZX7OHL2l0Y\nzyqCHEx7Ug+dvTiWzpYxdkTM/jCvJLRT7pt5cv6r3PaoQl6v8B2ab0TqHQKBgQCS\n8/Z0G14OXMrAJJwgC59ngTXA8zg7nrtDpI8U7OL/dTa/rtBbxbWCzZt4wuetCSc4\nQ4Q+UbhRW0slfLcunp6m47mx85EjGUQJ9U1BkGd5TM1z8PaHiCi5EauLlJ7XRbuB\nJGGEZa2VemoW6idS+uNGA6OSaGAa/BlNvenNE86MAQKBgQD0rKOSr3+3QG3SJCFd\nAVfs0ta6rA/YPJ0Db2kas9qZ91igATwYMSOB/Bg2Yfn+ocZXqDPoAvbqhiEyBXYq\nyMrv2+4EfSdkkGhHQfVxFK1VJuSuSGK15k2ye2J29QvoETld8s5r+J1GoFWWyULF\novQJgoe1smUgt/PYfxu5AV1yJg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "spaceapps2019@seal-team-404.iam.gserviceaccount.com",
+  "client_id": "116890877318523174511",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spaceapps2019%40seal-team-404.iam.gserviceaccount.com"
+}
